@@ -59,8 +59,16 @@
 
             manualResetEvent.Set();
 
+            busThread1.Join();
+            busThread2.Join();
+            busThread3.Join();
+
             Console.ResetColor();
-            Console.WriteLine("Day will end soon\n\n\n");
+            Console.WriteLine("Day ended\n\n\n");
+
+           
+
+
         }
     }
 }
